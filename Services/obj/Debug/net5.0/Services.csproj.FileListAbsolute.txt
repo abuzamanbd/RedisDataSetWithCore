@@ -1,0 +1,12 @@
+D:\mp\RedisTestApp\Services\bin\Debug\net5.0\Services.deps.json
+D:\mp\RedisTestApp\Services\bin\Debug\net5.0\Services.dll
+D:\mp\RedisTestApp\Services\bin\Debug\net5.0\ref\Services.dll
+D:\mp\RedisTestApp\Services\bin\Debug\net5.0\Services.pdb
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\Services.AssemblyInfoInputs.cache
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\Services.AssemblyInfo.cs
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\Services.csproj.CoreCompileInputs.cache
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\Services.dll
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\ref\Services.dll
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\Services.pdb
+D:\mp\RedisTestApp\Services\obj\Debug\net5.0\Services.csprojAssemblyReference.cache
