@@ -78,5 +78,17 @@ namespace RegisDataManagerForm
 
             dataGridView1.DataSource = bindingSource1;
         }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            string clientId = textBox1.Text;
+            _cacheStrigsStack.DeleteKey(clientId);
+            textBox1.Text = "";
+        }
     }
 }

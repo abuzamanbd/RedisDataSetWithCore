@@ -73,12 +73,26 @@ namespace RedisTest.Services
 
         public string GetStrings(string key)
         {
-            throw new NotImplementedException();
+            var value = _db.StringGet(key);
+            if (!value.HasValue)
+            {
+                return null;
+            }
+            var obj = JsonConvert.DeserializeObject<DepositInfoModel>(value);
+
+            return obj.ClientId;
         }
 
         public bool DeleteKey(string key)
         {
-            throw new NotImplementedException();
+            var exist = _db.StringGet(key);
+            if (exist != string.IsNullOrWhiteSpace(key))
+            {
+                var del = _db.KeyDelete(key);
+                return del;
+            }
+
+            return true;
         }
     }
 }

@@ -40,6 +40,7 @@ namespace RegisDataManagerForm
             this.ClientIdForDataView = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.getData = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,10 +131,11 @@ namespace RegisDataManagerForm
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 27);
             this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // getData
             // 
-            this.getData.Location = new System.Drawing.Point(442, 314);
+            this.getData.Location = new System.Drawing.Point(367, 313);
             this.getData.Name = "getData";
             this.getData.Size = new System.Drawing.Size(94, 29);
             this.getData.TabIndex = 10;
@@ -141,11 +143,22 @@ namespace RegisDataManagerForm
             this.getData.UseVisualStyleBackColor = true;
             this.getData.Click += new System.EventHandler(this.getData_Click);
             // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.Location = new System.Drawing.Point(485, 314);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(94, 29);
+            this.DeleteBtn.TabIndex = 11;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 589);
+            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.getData);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ClientIdForDataView);
@@ -183,6 +196,7 @@ namespace RegisDataManagerForm
         private System.Windows.Forms.Label ClientIdForDataView;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button getData;
+        private System.Windows.Forms.Button DeleteBtn;
     }
 }
 
